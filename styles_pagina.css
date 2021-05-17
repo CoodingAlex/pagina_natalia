@@ -1,0 +1,37 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background: #2ab8e0;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.item_img {
+  max-width: 400px;
+}
+
+.item:hover > .item_text {
+  display: block;
+}
+.item_text {
+  display: none;
+  position: absolute;
+  color: white;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
